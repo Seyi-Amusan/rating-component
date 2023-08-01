@@ -1,0 +1,28 @@
+.heading{
+    color: var(--white);
+}
+
+.paragraph{
+    color: var(--white-d);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.container{
+    &__btn{
+        font-size: 1.5rem;
+        color: var(--white);
+    }
+}
+.popup-container{
+    &__rate{
+        color: var(--orange);
+        font-size: 1.3rem;
+        font-weight: 700;
+
+        @media (max-width: 222px) {
+            font-size: 1.1rem;
+        }
+    }
+}

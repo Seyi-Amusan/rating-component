@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --white-d: hsl(0, 4%, 67%);
+  --orange: hsl(25, 97%, 53%);
+  --lgrey: hsl(217, 12%, 63%);
+  --mgrey: hsl(216, 12%, 54%);
+  --dblue: hsl(213, 19%, 18%);
+  --vdblue: hsl(216, 12%, 8%);
+  --vdblue-l: hsl(205, 12%, 27%);
+  --vdblue-a: hsla(216, 12%, 8%, .3);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--vdblue);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__btn {
+  background-color: var(--orange);
+  border: 0;
+  border-radius: 1.5rem;
+  height: 3rem;
+  transition: all 0.3s;
+}
+.container__btn:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+}
+.container__rates-box {
+  display: flex;
+  justify-content: space-between;
+}
+.container__rates-box--rating {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+  background-color: var(--vdblue-l);
+  border: 0;
+  transition: all 0.3s;
+}
+.container__rates-box--rating:hover {
+  background-color: var(--orange);
+}
+@media (max-width: 245px) {
+  .container__rates-box--rating {
+    width: 2.9rem;
+    height: 2.9rem;
+  }
+}
+
+.container {
+  background-color: var(--dblue);
+  padding: 2.5rem;
+  width: 30rem;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+  display: grid;
+  row-gap: 2rem;
+}
+@media (max-width: 320px) {
+  .container {
+    width: 95vw;
+  }
+}
+.container__star-icon {
+  padding: 1.5rem;
+  border-radius: 100%;
+  background-color: var(--vdblue-l);
+}
+
+.popup-container {
+  justify-items: center;
+  text-align: center;
+  transform: scale(1);
+}
+.popup-container__rate {
+  background-color: var(--vdblue-l);
+  padding: 0.5rem 0.8rem;
+  border-radius: 1.7rem;
+}
+@media (max-width: 290px) {
+  .popup-container__img {
+    width: 55vw;
+  }
+}
+
+.active {
+  display: none;
+}
+
+.popup-container-active {
+  display: none;
+  transform: scale(0);
+}
+
+.heading {
+  color: var(--white);
+}
+
+.paragraph {
+  color: var(--white-d);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.container__btn {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.popup-container__rate {
+  color: var(--orange);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+@media (max-width: 222px) {
+  .popup-container__rate {
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=main.css.map */

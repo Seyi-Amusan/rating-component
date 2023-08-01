@@ -1,0 +1,47 @@
+.container{
+    background-color: var(--dblue);
+    padding: 2.5rem;
+    width: 30rem;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 4px rgba($color: #000000, $alpha: .6);
+
+    display: grid;
+    row-gap: 2rem;
+
+    @media (max-width: 320px) {
+        width: 95vw;
+    }
+
+    &__star-icon{
+        padding: 1.5rem;
+        border-radius: 100%;
+        background-color: var(--vdblue-l);
+    }
+}
+
+.popup-container{
+    justify-items: center;
+    text-align: center;
+    transform: scale(1);
+
+    &__rate{
+        background-color: var(--vdblue-l);
+        padding: .5rem .8rem;
+        border-radius: 1.7rem;
+    }
+
+    &__img{
+        @media (max-width: 290px) {
+            width: 55vw;
+        }
+    }
+}
+
+.active{
+    display: none;
+}
+
+.popup-container-active{
+    display: none;
+    transform: scale(0);
+}

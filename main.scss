@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --white-d: hsl(0, 4%, 67%);
+    --orange: hsl(25, 97%, 53%);
+    --lgrey: hsl(217, 12%, 63%);
+    --mgrey: hsl(216, 12%, 54%);
+    --dblue: hsl(213, 19%, 18%);
+    --vdblue: hsl(216, 12%, 8%);
+    --vdblue-l: hsl(205, 12%, 27%);
+    --vdblue-a: hsla(216, 12%, 8%, .3);
+    
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--vdblue);
+}
+
+main{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import 'button';
+@import 'layout';
+@import 'typography';
